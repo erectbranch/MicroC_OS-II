@@ -106,19 +106,7 @@
 
 ---
 
-### 2.5.1 Task Priorities
-
-task가 application의 실행 중 우선순위를 수정할 수 있는지 여부에 따라서, 우선순위를 **static**이나 **dynamic**으로 분류할 수 있다.
-
-|| static priority | dynamic priority |
-| --- | :---: | :---: |
-| 우선순위 배정 | 컴파일 단계에서 정적 우선순위 배정 | task 실행 도중 우선순위 변경 가능 |
-| 주된 사용처 | Real-Time OS(RTOS) | General-Purpose OS(GPOS) |
-| 장점 | 컴파일 단계에서 모든 task의 deadline 결정 | priority inversion 방지 |
-
----
-
-### 2.5.2 Non-Preemptive vs Preemptive Kernels
+### 2.5.1 Non-Preemptive vs Preemptive Kernels
 
 우선순위 기반 스케줄링은 CPU 자원의 선점 방식(스케줄링)에 따라서, **non-preemptive**(=cooperative multitasking, 비선점형)과 **preemptive**(선점형) 두 커널로 분류할 수 있다.
 
@@ -138,7 +126,7 @@ task가 application의 실행 중 우선순위를 수정할 수 있는지 여부
 
 ---
 
-#### 2.5.2.1 Reentrant vs Non-Reentrant Functions
+#### 2.5.1.1 Reentrant vs Non-Reentrant Functions
 
 특정 함수를 사용할 때 데이터의 손상 가능성(reentrancy)에 따라서, 함수를 **reentrant**와 **non-reentrant** 두 가지로 분류할 수 있다.
 
@@ -149,7 +137,7 @@ task가 application의 실행 중 우선순위를 수정할 수 있는지 여부
 
 ---
 
-### 2.5.3 Rate Monotonic Scheduling(RMS)
+### 2.5.2 Rate Monotonic Scheduling(RMS)
 
 **RMS**(Rate Monotonic Scheduling)은, task의 rate(실행 빈도, **short period**)를 기반으로, 우선순위를 배정하는 스케줄링 기법이다. 다음은 RMS에서 두는 세 가지 가정이다.
 
