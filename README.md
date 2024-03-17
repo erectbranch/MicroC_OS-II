@@ -36,6 +36,17 @@ CRC Press · 2002년 02월 05일 출시</b>
 
    > Interrupt, Clock Tick
    
+ - [Critical Section, TCB, Ready List](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch03/summary01)
+
+   > uC/OS-II File Structure, Critical Section
+   
+   > TCB(Task Control Block), Ready List(OSRdyGrp, OSRdyTbl, OSUnMapTbl), Operations on Ready List
+
+ - [Task Scheduling, Initialize Task, Clock Tick](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch03/summary01)
+
+   > Task Level Context Switching, Lock/Unlocking Scheduler Interrupt Level Context Switching, 
+   
+   > Clock Tick, Statistics Task, Initializing OS
 
 </br>
 

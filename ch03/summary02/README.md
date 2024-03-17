@@ -2,8 +2,6 @@
 
 - task-level scheduling: `OS_Sched()`
 
-  소프트웨어 인터럽트 명령어나, (프로세서에 따라) TRAP 명령어에 의해 호출된다.
-
 - ISR-level scheduling: `OSIntExit()`
 
 ---
@@ -78,7 +76,7 @@ void OS_Sched(void)
 
 | $\rightarrow$ | 기존 task의 context를 저장 | $\rightarrow$ | 새롭게 선점한 task를 재개 |
 | :---: | :---: | :---: | :---: |
-| | ![OS_TASK_SW 2](images/OS_TASK_SW_2.png) | | ![OS_TASK_SW 3](images/OS_TASK_SW_3.png) |
+| | ![OS_TASK_SW 2](https://github.com/erectbranch/MicroC_OS-II/blob/master/ch03/summary02/images/OS_TASK_SW_2.png) | | ![OS_TASK_SW 3](https://github.com/erectbranch/MicroC_OS-II/blob/master/ch03/summary02/images/OS_TASK_SW_3.png) |
 | (1) | `PC`, `PSW`를 stack으로 push<br/>(hw에서 수행) | (1) | `OSTCBCur` = `OSTCBHighRdy`,<br/>`OSPrioCur` = `OSPrioHighRdy` |
 | (2) | `R1`, `R2`, `R3`, `R4`를 stack으로 push | (2) | `SP`를 최고 우선순위 task의 stack pointer로 설정 |
 | (3) | 현재 `SP` 를 `OSTCBStkPtr` 변수에 저장 | (3) | 해당 stack에서 범용 레지스터 pop |

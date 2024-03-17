@@ -76,7 +76,7 @@ void YourTask (void *pdata)
 
 ---
 
-## 3.4 Task Control Block(OS_TCB)
+## 3.4 Task Control Block: OS_TCB
 
 task가 생성할 때, 각 task마다 **TCB**(Task Control Block)가 할당된다.(`OS_TCBInit()`) TCB는 task의 상태를 담고 있는 `OS_TCB` 구조체 형태로 RAM에 **reside**(상주)한다.
 
