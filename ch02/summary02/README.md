@@ -275,17 +275,24 @@ ISR 종료 시, 정책에 따라서 다음 중 하나로 return한다.
 #define OS_TICKS_PER_SEC 100
 ```
 
-하지만 주의할 점으로, **tick delay는 정확하게 작동하지 않는다.** 다음은 1 tick을 20 ms로 설정한 시스템의 세 가지 동작 예시다.
+하지만 주의할 점으로, **tick delay는 정확하게 작동하지 않는다.** 다음은 1 tick을 20 ms로 설정한 시스템에서, delay가 정확하지 않게 작동하는 세 가지 예시다.
+
+> notation: HPT(High-Priority Task), LPT(Low-Priority Task)
 
 | case 1 |
 | :---: |
+| HPT와 ISR가, 1 tick 지연시킨 task보다 먼저 수행됨 |
 | ![delaying 1 tick case 1](images/delaying_1_tick_case_1.png) |
 | **case 2** |
+| HPT와 ISR가, 1 tick보다 짧은 시간 잠시 수행됨 |
 | ![delaying 1 tick case 2](images/delaying_1_tick_case_2.png) |
 | **case 3** |
+| HPT와 ISR이 1 tick을 초과하여 실행 |
 | ![delaying 1 tick case 3](images/delaying_1_tick_case_3.png) |
 
-(생략)
+> case 2: 1 tick delay는 사실상 즉시 다시 실행된다. 이러한 현상을 고려하여 delay는, 의도한 tick보다 +1 추가한 값으로 설정하는 것이 바람직하다.
+
+> case 3: 주로 CPU 부하나 설계 오류로 인해 발생하고, 설정한 delay보다 늦게 실행되는 문제가 발생한다.
 
 ---
 

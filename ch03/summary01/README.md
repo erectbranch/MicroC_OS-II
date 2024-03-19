@@ -198,14 +198,14 @@ typedef struct os_tcb {
 
 | bits | status | description |
 | --- | --- | --- | 
-| 0x00 | OS_STAT_RDY (=0x00) | Task Ready |
-| 0x01 | OS_STAT_SEM | Pending on semaphore |
-| 0x02 | OS_STAT_MBOX | Pending on mailbox |
-| 0x04 | OS_STAT_Q | Pending on queue
-| 0x08 | OS_STAT_SUSPEND | Task is suspended |
-| 0x10 | OS_STAT_MUTEX | Pending on mutual exclusion semaphore |
-| 0x20 | OS_STAT_FLAG | Pending on event flag group |
-| 0x3E | OS_STAT_PEND_ANY | (OS_STAT_SEM \| OS_STAT_MBOX \| OS_STAT_Q \| OS_STAT_MUTEX \| OS_STAT_FLAG) |
+| 0x00 | `OS_STAT_RDY` | Task Ready |
+| 0x01 | `OS_STAT_SEM` | Pending on semaphore |
+| 0x02 | `OS_STAT_MBOX` | Pending on mailbox |
+| 0x04 | `OS_STAT_Q` | Pending on queue
+| 0x08 | `OS_STAT_SUSPEND` | Task is suspended |
+| 0x10 | `OS_STAT_MUTEX` | Pending on mutual exclusion semaphore |
+| 0x20 | `OS_STAT_FLAG` | Pending on event flag group |
+| 0x3E | `OS_STAT_PEND_ANY` | (`OS_STAT_SEM` \| `OS_STAT_MBOX`\| `OS_STAT_Q` \| `OS_STAT_MUTEX` \| `OS_STAT_FLAG`) |
 
 ---
 
