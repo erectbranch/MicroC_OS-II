@@ -52,6 +52,16 @@ CRC Press · 2002년 02월 05일 출시</b>
 
    > Creating, Deleting, Stack Check, Suspending, Resuming, Changing Priority, Getting Task's Information
 
+ - [Time Management](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch05)
+   
+   > Delaying, Resuming, Setting Time, Getting Time
+
+ - [Event Control Blocks](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch06)
+
+   > Event Control Blocks, ECB Wait List(OSEventGrp, OSEventTbl), List of Free ECBs(OSEventFreeList)
+
+   > Initialize ECB, Making a Task Ready, Waiting for Event, Task Ready Because of Timeout
+
 </br>
 
 ## :mag: 목차
