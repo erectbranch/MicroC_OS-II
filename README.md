@@ -62,6 +62,18 @@ CRC Press · 2002년 02월 05일 출시</b>
 
    > Initialize ECB, Making a Task Ready, Waiting for Event, Task Ready Because of Timeout
 
+ - [Semaphore Management](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch07)
+
+   > Relationship between Task, ISR and Semaphore
+
+   > Creating/Waiting/Signaling/Deleting Semaphore, Getting Semaphore without Wating(non-blocking)
+
+ - [Memory Management](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch08)
+
+   > Memory Fragmentation, Memory Control Blocks
+
+   > Creating/Obtaining/Returning Memory Partition, Obtaining Status of Memory Partition
+
 </br>
 
 ## :mag: 목차
