@@ -173,7 +173,7 @@ void Function (void)
 
 | Task-ISR | Task-Task |
 | :---: | :---: |
-| ![synchronization task-ISR](https://github.com/erectbranch/MicroC_OS-II/blob/master/ch02/summary02/synchronize_task-ISR.png) | ![synchronization task-task](https://github.com/erectbranch/MicroC_OS-II/blob/master/ch02/summary02/synchronize_task-task.png) |
+| ![synchronization task-ISR](https://github.com/erectbranch/MicroC_OS-II/blob/master/ch02/summary02/images/synchronize_task-ISR.png) | ![synchronization task-task](https://github.com/erectbranch/MicroC_OS-II/blob/master/ch02/summary02/images/synchronize_task-task.png) |
 
 ```c
 void Task1(void *pdata)
