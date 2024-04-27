@@ -8,7 +8,7 @@
 </h1>
   
 <b>Labrosse, Jean J. 저</b></br>
-CRC Press · 2002년 02월 05일 출시</b>
+CRC Press · 2002년 02월 05일 출간</b>
 
 </div>
 
@@ -42,7 +42,7 @@ CRC Press · 2002년 02월 05일 출시</b>
    
    > TCB(Task Control Block), Ready List(OSRdyGrp, OSRdyTbl, OSUnMapTbl), Operations on Ready List
 
- - [Task Scheduling, Initialize Task, Clock Tick](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch03/summary01)
+ - [Task Scheduling, Initialize Task, Clock Tick](https://github.com/erectbranch/MicroC_OS-II/tree/master/ch03/summary02)
 
    > Task Level Context Switching, Lock/Unlocking Scheduler Interrupt Level Context Switching, 
    

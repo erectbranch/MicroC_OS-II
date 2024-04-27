@@ -16,6 +16,8 @@ task는 무한루프 형태로, 작업이 끝나면 스스로를 삭제하는 �
 | `OSTaskCreateExt()` | task 생성 |
 | `OSTaskStkChk()` | 스택 체크 |
 | `OSTaskDel()` | task 삭제 |
+| `OSTaskDelReq()` | task 삭제 요청 |
+| `OSTaskChangePrio()` | task 우선순위 변경 |
 | `OSTaskSuspend()` | task 중지 |
 | `OSTaskResume()` | task 재시작 |
 | `OSTaskQuery()` | task 정보 조회 |
